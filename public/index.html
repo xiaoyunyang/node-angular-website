@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <!-- if you remove this meta tag, the NSA will spy on you through your Xbox Kinect camera -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NumberShapes</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/foundation-icons/foundation-icons.css"/>
+    <link rel="stylesheet" href="css/webicons-master/webicons.css"/>
+    <link rel="shortcut icon" href="siteImages/favicon.ico" >
+    <script src="bower_components/modernizr/modernizr.js"></script>
+</head>
+<body ng-app="numberShapesPublic">
+    <div ng-include='"templates/header.html"'></div>
+    <div class="row">
+        <div class="large-12 columns">
+            <div ng-view><!-- Page Main Content Goes Here --></div>
+            <div ng-include='"templates/footer.html"'></div>
+        </div>
+    </div>
+    
+    <!--------- this is for orbit countdown -------->
+    <script>
+        document.write('<script src=js/vendor/' +
+        ('__proto__' in {} ? 'zepto' : 'jquery') +
+        '.js><\/script>')    
+    </script>
+    <!-- Vendor: Angular, followed by our custom Javascripts -->
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <!-- website routing -->
+    <script src="js/main.js"></script>
+    <!-- frontend -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

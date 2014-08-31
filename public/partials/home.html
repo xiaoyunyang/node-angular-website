@@ -1,0 +1,130 @@
+<div class="row"><!------------------ data-orbit -------------->
+    <div class="large-12 hide-for-small">
+        
+        
+
+        
+        <ul id="featured" data-orbit data-options="timer_speed:8000;">
+            <li>
+                <img src="siteImages/Home/banner_FortyNine.png" alt="slide image">
+                <div class="orbit-caption">
+                    Multiplication app.
+                </div>
+            </li>
+            <li>
+                <img src="siteImages/Home/banner_AddTwo.png" alt="slide image">
+                <div class="orbit-caption">
+                    Caption Two.
+                </div>
+            </li>
+            <li>
+                <img src="siteImages/Home/banner_MinusTwo.png" alt="slide image">
+                <div class="orbit-caption">
+                    Caption Three.
+                </div>
+            </li>
+            <li>
+                <img src="siteImages/Home/banner_OverTen.png" alt="slide image">
+                <div class="orbit-caption">
+                    Caption Three.
+                </div>
+            </li>
+        </ul>
+    </div>
+</div><!------------ ./data-orbit -------------->
+<div class="row"><!------------ mobile data-orbit -------------->
+<div class="large-12 columns show-for-small">
+  <img src="http://placehold.it/1200x700&text=Mobile Header">
+</div>
+</div><!------------ ./mobile data-orbit -------------->
+
+<br>
+
+<div class="row"><!------------ App Store, Gallery, and Blog-------------->
+    <div class="large-12 columns">
+        <div class="row">
+            <div class="large-4 small-6 columns"><!------------ App Store --------------->
+                <h2 class="site-label">iOS Apps</h2><hr>
+                <div class="row"><!----- FortyNine: First App ------->
+                    <div class="large-1 column"></div>
+                    <div class="large-2 large-offset-2 columns">
+                        <img src="siteImages/Home/appIcon_FortyNine.png">
+                    </div>
+                    <div class="large-8 columns">
+                        <h5 class="subheader">
+                            <a ng-mouseover="gameImg=0" ng-init="gameImg=0" target="_blank" href="https://itunes.apple.com/us/app/fortynine/id909512755?ls=1&mt=8">
+                                FortyNine
+                            </a>
+                        </h5>
+                    </div>
+                </div><hr><!----- ./FortyNine ------->
+                <div class="hide-for-small"><!----- Other Apps ------->
+                    <div class="row"><!----- MinusTwo ------->
+                        <div class="large-1 column"></div>
+                        <div class="large-2 large-offset-2 columns">
+                            <img src="siteImages/Home/appIcon_MinusTwo.png">
+                        </div>
+                        <div class="large-8 columns">
+                            <h5 class="subheader">
+                                <a ng-mouseover="gameImg=1" ng-init="gameImg=0" href="#">
+                                    MinusTwo
+                                </a>
+                            </h5>
+                        </div>
+                    </div><hr><!----- ./MinusTwo ------->
+                    <div class="row"><!----- AddTwo ------->
+                        <div class="large-1 column"></div>
+                        <div class="large-2 large-offset-2 columns">
+                            <img src="siteImages/Home/appIcon_AddTwo.png">
+                        </div>
+                        <div class="large-8 columns">
+                            <h5 class="subheader">
+                                <a ng-mouseover="gameImg=2" ng-init="gameImg=0" href="#">
+                                    AddTwo
+                                </a>
+                            </h5>
+                        </div>
+                    </div><hr><!----- ./AddTwo ------->
+                    <div class="row"><!----- OverTen ------->
+                        <div class="large-1 column"></div>
+                        <div class="large-2 large-offset-2 columns">
+                            <img src="siteImages/Home/appIcon_OverTen.png">
+                        </div>
+                        <div class="large-8 columns">
+                            <h5 class="subheader">
+                                <a ng-mouseover="gameImg=3" ng-init="gameImg=0" href="#">
+                                    OverTen
+                                </a>
+                            </h5>
+                        </div>
+                    </div><hr><!----- ./OverTen ------->
+                </div>
+                <a href="#" class="right">See more</a>                
+            </div> <!------------ ./App Store --------------->
+            <div class="large-4 small-6 columns"><!------------ Gallery --------------->
+                <img ng-src="siteImages/Home/game{{gameImg}}.png" />
+            </div><!------------ ./Gallery --------------->
+            
+            <div class="large-4 small-12 columns"><!------------ Blog Area--------------->
+                <h2 class="site-label">What's New</h2><hr>
+                <div class="panel">
+                    <h5><a href="#">Post Title 1</a></h5>
+                    <h6 class="subheader">
+                        Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Suspendisse ultrices ornare tempor...
+                    </h6>
+                    <h6><a href="#">Read More <i class="fi-arrow-right"></i></a></h6>
+                </div>
+                <div class="panel hide-for-small">
+                    <h5><a href="#">Post Title 2 <i class="fi-arrow-right"></i></a></h5>
+                </div>
+                <div class="panel hide-for-small">
+                    <h5><a href="#">Post Title 3 <i class="fi-arrow-right"></i></a></h5>
+                </div>
+                <a href="#" class="right">Go To Blog <i class="fi-arrow-right"></i></a>
+            </div><!------------ ./Blog Area--------------->
+        </div>
+    </div>
+</div><!------------ ./App Store, Gallery, and Blog-------------->
+
+<script src="js/angular.min.js"></script>
+<script src="js/angular-route.min.js"></script>
