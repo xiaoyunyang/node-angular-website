@@ -15,6 +15,7 @@ app.config(['$routeProvider', function ($routeProvider) {
     // Pages
     .when("/about", {templateUrl: "partials/about.html", controller: "PageCtrl"})
     .when("/learn-math", {templateUrl: "partials/learn-math.html", controller: "PageCtrl"})
+    .when("/learn-math#worksheets", {templateUrl: "partials/learn-math.html#worksheets", controller: "PageCtrl"})
     .when("/app-store", {templateUrl: "partials/app-store.html", controller: "PageCtrl"})
     .when("/blog", {templateUrl: "partials/blog.html", controller: "PageCtrl"})
     .when("/contact", {templateUrl: "partials/contact.html", controller: "PageCtrl"})
@@ -40,7 +41,7 @@ app.controller('PageCtrl', function (/* $scope, $location, $http */) {
  //initializing all plugin
   $(document).foundation();
   
-  
+  $('.collapse').collapse();
   angular.module('numberShapesPublic', []);
   
   

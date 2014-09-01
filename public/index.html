@@ -7,18 +7,25 @@
     <title>NumberShapes</title>
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/foundation-icons/foundation-icons.css"/>
-    <link rel="stylesheet" href="css/webicons-master/webicons.css"/>
-    <link rel="shortcut icon" href="siteImages/favicon.ico" >
+    <link rel="stylesheet" href="css/webicons-master/webicons.css">
+    <link rel="shortcut icon" href="siteImages/favicon.ico" />
     <script src="bower_components/modernizr/modernizr.js"></script>
 </head>
-<body ng-app="numberShapesPublic">
+<body ng-app="numberShapesPublic" class="body-custom">
     <div ng-include='"templates/header.html"'></div>
-    <div class="row">
+    <div class="row content-custom">
         <div class="large-12 columns">
             <div ng-view><!-- Page Main Content Goes Here --></div>
+            <br><br>            
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="large-12 columns">
             <div ng-include='"templates/footer.html"'></div>
         </div>
     </div>
+    
     
     <!--------- this is for orbit countdown -------->
     <script>
@@ -35,5 +42,7 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/transition.js"></script>
+    <script src="js/collapse.js"></script>
 </body>
 </html>

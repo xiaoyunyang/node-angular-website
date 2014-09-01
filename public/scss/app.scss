@@ -900,12 +900,30 @@
 .btn-info.active {
   background-color: #24748c \9;
 }
+.btn-lg,
+.btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
 
 
 /*********************************END OF BOOTSTRAP BTN ********************************/
 
 
 /********************************* MY CUSTOMIZATION *****************/
+.body-custom {
+  //background-image: url('../siteImages/background.gif');
+  background-color:#fff;
+}
+
+.content-custom {
+  background-color:#fff;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    -moz-box-shadow:  3px 3px 5px 6px #ccc;
+      box-shadow:     3px 3px 5px 2px #ccc;
+}
 .special-button:hover{
     text-decoration: none;
     color: #ff3287;
@@ -952,7 +970,7 @@
 /*-----------------------------------
 	Footer
 -----------------------------------*/
-footer .slim.container { width: 960px; padding-top: 30px; border-top: 1px solid #DDD;}
+footer .slim.container { width: 960px; padding-top: 30px; /*border-top: 1px solid #DDD;*/}
 footer .slim.container .row { width: 980px; }
 footer .slim.container .four.columns { width: 225px; }
 
@@ -1071,9 +1089,17 @@ ul.dates {
 /*------------------------------------
  timeline styles
 ------------------------------------*/
+.path-right {
+  padding-right: 50px;
+  float:right;
+}
+.path-left {
+  padding-left: 50px;
+  float:left;
+}
 .path-container {
   margin-top: 50px;
-  margin-bottom: 70px;
+  margin-bottom: 20px;//70px;
 }
 .path-container .path-item h1 {
   text-align: center;
@@ -1093,15 +1119,20 @@ ul.dates {
   font-size: emCalc(14px);
 }
 .path-container .path-item .circle {
-  background-color: #ccc;
-  background-size: 156px 156px;
+  background-color: transparent;//#ccc;
+  background-size: 400px 400px;//156px 156px;
   border-radius: 50%;
-  width: 156px;
-  height: 156px;
+  width: 400px;//156px;
+  height: 400px;//156px;
   position: relative;
   margin-bottom: 180px;
   z-index: 2;
 }
+
+.path-item-img {
+  size: inherit;
+}
+
 .path-container .path-item .circle.circle-left {
   left: -7px;
 }
@@ -1109,7 +1140,7 @@ ul.dates {
   right: -10px;
 }
 .path-container .line {
-  background: #ddd;
+  background: transparent;//#ddd;
   width: 2px;
   bottom: 0;
   position: absolute;
@@ -1122,7 +1153,7 @@ ul.dates {
 /*------------------------------------
  medium timeline styles
 ------------------------------------*/
-@media only screen and (max-width: 800px) and (min-width: 768px) {
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
   .line {
     display: none !important;
   }
@@ -1132,7 +1163,15 @@ ul.dates {
     right: 0;
     margin-left: 15px;
   }
-
+  .large-5 {
+    width: 50% !important;
+  }
+  .path-left {
+    float: left !important;
+  }
+  .path-right {
+    float: right !important;
+  }
   .path-item .large-7 {
     width: 25%;
   }
@@ -1143,21 +1182,25 @@ ul.dates {
   }
 
   .circle-right {
-    float: left;
+    float: left !important;
     right: 0px !important;
   }
 
   .circle-left {
+    margin-left: 0px !important;
     left: 0px !important;
+    float: right !important;
   }
 }
+
 /*------------------------------------
  mobile timeline styles
 ------------------------------------*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 800px) {
   .path-container {
     text-align: center;
   }
+  
   .path-container .circle {
     top: 0;
     right: 0;
@@ -1165,9 +1208,43 @@ ul.dates {
     float: none;
     margin-bottom: 30px !important;
     margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
   }
+  
+  .path-right {
+    padding-right: 0px;
+  }
+  .path-left {
+    padding-left: 0px;
+  }
+  
+  .push-5 {
+    left: 5px;
+    float: center;
+  }
+  .pull-7 {
+    left: 5px;
+    float: center;
+  }
+  .circle-right {
+    float: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .circle-left {
+    float: center !important;
+    margin-left: auto !important;//25%;
+    margin-right: auto !important;//0px;
+  }
+  .path-container .line {
+     background: transparent;
+    
+  }
+  .path-container .path-item .circle {
+    background-size: 200px 200px;
+    width: 200px;
+    height: 200px;
+  }
+
 }
 /********************************* END OF VERTICAL TIMELINE *****************/
 
@@ -1228,6 +1305,24 @@ h2{
   }
 }
 /********************************* END OF TESTIMONIAL *****************/
+
+/********************************* SEARCH RESULTS *****************/
+
+/* Styles for search results */
+
+.results{
+margin-top: 50px;
+ .search-results{
+   margin-top: 40px;
+   margin-bottom: 20px;
+ }
+ img{
+   margin-left: auto;
+   margin-right:auto;
+   margin-bottom: 10px;
+ }
+}
+/********************************* END OF RESULTS *****************/
 
 /********************************* PRODUCT CARD *****************/
 .item-wrapper {

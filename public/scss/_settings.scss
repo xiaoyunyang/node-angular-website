@@ -1180,15 +1180,15 @@ $sub-nav-active-cursor: default;
 
 // $include-html-tooltip-classes: $include-html-classes;
 
-// $has-tip-border-bottom: dotted 1px #ccc;
+ $has-tip-border-bottom: none;//dotted 1px #ccc;
 // $has-tip-font-weight: $font-weight-bold;
-// $has-tip-font-color: #333;
-// $has-tip-border-bottom-hover: dotted 1px scale-color($primary-color, $lightness: -55%);
-// $has-tip-font-color-hover: $primary-color;
-// $has-tip-cursor-type: help;
+ $has-tip-font-color: inherent;//#333;
+ $has-tip-border-bottom-hover: none;//dotted 1px scale-color($primary-color, $lightness: -55%);
+ $has-tip-font-color-hover: #333;//$primary-color;
+ $has-tip-cursor-type: hand;//help;
 
 // $tooltip-padding: rem-calc(12);
-// $tooltip-bg: #333;
+ $tooltip-bg: #333;
 // $tooltip-font-size: rem-calc(14);
 // $tooltip-font-weight: $font-weight-normal;
 // $tooltip-font-color: #fff;

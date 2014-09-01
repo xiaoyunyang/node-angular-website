@@ -1,68 +1,88 @@
 <div class="path-container">
     <div class="row">
         <div class="large-12 columns ">
-          <h1> This is a Timeline!</h1>
+          <h1 class="site-label">Start Learning!</h1>
+          <hr>
         </div>
     </div>
     <div class="row path-item">
         <div class="large-7 push-5 columns">
-            <div class="circle circle-left "></div>
+            <div class="circle circle-left path-left"><img class="path-item-img" src="siteImages/Learn/getApp.png"/></div>
         </div>
-        <div class="large-5 pull-7 columns path-text left">
-            <h3>Lorem ipsum dolor sit amet, consectetur</h3>
-            <p>Something that happened in the past or will happen in the future Lorem ipsum dolor sit amet, consectetur adipiscing elit.  a est. Suspendisse potenti. Sc lorem pretium, molestie</p>
-          <a href="#">Show something cool Â»</a>
+        <div class="large-5 pull-7 columns path-text path-left">
+            <h3>Get an App</h3>
+            <p>Choose the app for a skill you'd like to master and start learning the language</p>
+          <a href="#/app-store">Go to App Store <i class="fi-arrow-right"></i></a>
         </div>
     </div>
     <div class="row path-item">
         <div class="large-7 columns">
-            <div class="circle circle-right right"></div>
+            <div class="circle circle-right path-right"><img class="path-item-img" src="siteImages/Learn/game_modes.png"/></div>
         </div>
-        <div class="large-5 columns path-text right">
-            <h3>Lorem ipsum dolor sit amet, consectetur</h3>
-            <p>Something that happened in the past or will happen in the future Lorem ipsum dolor sit amet, consectetur adipiscing elit.  a est. Suspendisse potenti. Sc lorem pretium, molestie</p>
-            <a href="#">Show something cool Â»</a>
-        </div>
-    </div>
-    <div class="row get-feedback path-item">
-        <div class="large-7 push-5 columns">
-            <div class="circle circle-left"></div>
-        </div>
-        <div class="large-5 pull-7 columns path-text left">
-            <h3>Lorem ipsum dolor sit amet, consectetur</h3>
-            <p>Something that happened in the past or will happen in the future Lorem ipsum dolor sit amet, consectetur adipiscing elit.  a est. Suspendisse potenti. Sc lorem pretium, molestie</p>
-            <a href="#">Show something cool Â»</a>
+        <div class="large-5 columns path-text path-right">
+            <h3>Be ambitious</h3>
+            <p>Challenge yourself by doing timed drills and alternating with quiz mode</p>
         </div>
     </div>
-    <div class="row land-job path-item">
+    <div class="row path-item">
+        <div class="large-7 push-5 columns"><div class="circle circle-left path-left"><img class="path-item-img" src="siteImages/Learn/page.png"/></div></div>
+        <div class="large-5 pull-7 columns path-text path-left">
+            <h3>Take it to the page</h3>
+            <p>Integrate the accompanying worksheets and practice your skills on paper as well</p>
+            <a target="_blank" href="http://www.number-shapes.com/activities">Download worksheets <i class="fi-arrow-right"></i></a>
+        </div>
+    </div>
+    <div class="row path-item">
         <div class="large-7 columns">
-            <div class="circle circle-right right"></div>
+            <div class="circle circle-right path-right"><img class="path-item-img" src="siteImages/Learn/practice.png"/></div>
         </div>
-        <div class="large-5 columns path-text right">
-            <h3>Lorem ipsum dolor sit amet, consectetur</h3>
-            <p>Something that happened in the past or will happen in the future Lorem ipsum dolor sit amet, consectetur adipiscing elit.  a est. Suspendisse potenti. Sc lorem pretium, molestie</p>
-            <a href="#">Show something cool Â»</a>
+        <div class="large-5 columns path-text path-right">
+            <h3>Practice makes perfect</h3>
+            <p>Add more apps to your regimen and practice multiple skills each day</p>
         </div>
     </div>
     <span class="line hide-for-small"></span>
 </div><!---------------------- end of vertical timeline ------------>
 
+<!---------------------- Worksheets ------------>
+<h1 class="site-label">Worksheets</h1><hr>
+<div class="row" id="worksheets">
+    <div class="large-12 columns ">
+        <div class="panel-group" id="accordion">
+        <div class="row results">
+        <div class="large-12 columns ">
+            <div class="row">
+                <div class="large-9 columns">
+                    <p>Worksheets for learning math: 10</p>
+                </div>
+            </div>
+            <div class="search-results">
+                <div ng-include='"partials/worksheet/addition-add-two.html"'></div>
+                <div ng-include='"partials/worksheet/addition-over-ten.html"'></div>
+                <div ng-include='"partials/worksheet/fractional-parts-1.html"'></div>
+                <div ng-include='"partials/worksheet/fractional-parts-2.html"'></div>
+                <div ng-include='"partials/worksheet/horizontal-addition.html"'></div>
+                <div ng-include='"partials/worksheet/mutliplication-forty-nine.html"'></div>
+                <div ng-include='"partials/worksheet/number-lines.html"'></div>
+                <div ng-include='"partials/worksheet/place-value.html"'></div>
+                <div ng-include='"partials/worksheet/subtraction-minus-two.html"'></div>
+                <div ng-include='"partials/worksheet/subtraction-over-ten.html"'></div>
+            </div>
+            <a target="_blank" href="http://www.number-shapes.com/activities" class="btn btn-info right">see more <i class="fi-arrow-right"></i></a>
+          </div>
+        </div>  
+    </div>
+</div><!---------------------- END OF Worksheets ------------>
 
 
 
-
-
-
-
-
-
-
-
-
-
+<!-------------------- learning plan ------------->
+<!---
+<h1 class="site-label">Learning Plan</h1><hr>
 <div class="row">
   <div class="large-6 columns small-centered">
     <div class="exp-timeline">
+        <h2>Learning Plan</h2>
       <div class="container">
         <ul class="items">
           <li>
@@ -103,3 +123,5 @@
     </div>
   </div>
 </div>
+--->
+<!-------------------- end of learning plan ------------->
