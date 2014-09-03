@@ -651,12 +651,32 @@
 /*********************************END OF BOOTSTRAP IMAGE BORDER ***********************/
 
 /*********************************BOOTSTRAP BTN ********************************/
-
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+/*
 .btn {
   display: inline-block;
   *display: inline;
-  padding: 4px 12px;
-  margin-bottom: 0;
+  padding: 6px 12px; //change
+  margin-top: 5px;
+  margin-bottom: 5px;
   *margin-left: .3em;
   font-size: 14px;
   line-height: 20px;
@@ -687,7 +707,7 @@
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
      -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-}
+}*/
 
 .btn:hover,
 .btn:focus,
@@ -869,6 +889,8 @@
 }
 
 .btn-info {
+  margin-top: 5px; //for worksheets
+  margin-bottom: 5px; //for worksheets
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #49afcd;
@@ -908,6 +930,25 @@
   border-radius: 6px;
 }
 
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-facebok {
+  background-color: #3B5998;
+}
+
+
+
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+input[type="submit"].btn-block,
+input[type="reset"].btn-block,
+input[type="button"].btn-block {
+  width: 100%;
+}
 
 /*********************************END OF BOOTSTRAP BTN ********************************/
 
@@ -971,7 +1012,7 @@
 	Footer
 -----------------------------------*/
 footer .slim.container { width: 960px; padding-top: 30px; /*border-top: 1px solid #DDD;*/}
-footer .slim.container .row { width: 980px; }
+footer .slim.container .row { width: inherit;}
 footer .slim.container .four.columns { width: 225px; }
 
 footer.marketing .slim.container { width: 980px; }
@@ -1014,6 +1055,16 @@ body.ie7 .newsletter-signup { margin-top: -9px; }
     padding-right: 5px;
 }
 
+/*------------------------------------
+ medium footer styles
+------------------------------------*/
+@media only screen and (max-width: 1000px) and (min-width: 800px) {
+  footer .slim.container { width: 800px; padding-top: 30px; border-top: 1px solid #DDD;}
+}
+
+@media only screen and (max-width: 800px) {
+  footer .slim.container { width: 700px; padding-top: 30px; border-top: 1px solid #DDD;}
+}
 
 /********************************* END OF MY CUSTOMIZATION *****************/
 
@@ -1379,3 +1430,37 @@ p {
   margin-bottom: 0;
 }
 /********************************* END OF PRODUCT CARD *****************/
+/********************************* SIGNUP FORM *****************/
+.signup-panel {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-top: 30px;
+}
+.signup-panel i {
+  font-size: 30px;
+  line-height: 50px;
+  color: #999;
+}
+.fa {
+    color:#fff !important;
+}
+
+.signup-panel form input, .signup-panel form span {
+  height: 50px;
+}
+.signup-panel .welcome {
+  font-size: 26px;
+  text-align: center;
+  margin-left: 0;
+}
+.signup-panel p {
+  font-size: 13px;
+  font-weight: 200;
+  margin-left: 25%;
+}
+.signup-panel .button {
+  margin-left: 35%;
+}
+/********************************* END OF SIGNUP FORM *****************/
+    
