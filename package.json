@@ -1,13 +1,21 @@
 {
+<<<<<<< HEAD
   "name": "number-shapes",
   "version": "0.1.0",
   "private": true,
   "description": "A Node.js app using Express 4",
   "main": "app.js",
+=======
+  "name": "node-js-getting-started",
+  "version": "0.1.5",
+  "description": "A sample Node.js app using Express 4",
+  "main": "index.js",
+>>>>>>> 5e531fb35f468f006b6bf18dde39c88e77c5b89a
   "scripts": {
     "start": "node app.js"
   },
   "dependencies": {
+<<<<<<< HEAD
     "express": "~4.8.6",
     "ejs": "~0.7.1",
     "body-parser": "~1.6.6",
@@ -23,9 +31,13 @@
     "express-session": "~1.7.6",
     "stormpath": "~0.5.1",
     "passport-stormpath": "~0.1.2"
+=======
+    "ejs": "2.3.3",
+    "express": "4.13.3"
+>>>>>>> 5e531fb35f468f006b6bf18dde39c88e77c5b89a
   },
   "engines": {
-    "node": "0.10.x"
+    "node": "0.12.7"
   },
   "repository": {
     "type": "git",
@@ -35,10 +47,6 @@
     "node",
     "heroku",
     "express"
-  ],
-  "author": "Mark Pundsack",
-  "contributors": [
-    "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)"
   ],
   "license": "MIT"
 }
