@@ -17,11 +17,13 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when("/app-store", {templateUrl: "partials/app-store.html", controller: "PageCtrl"})
     .when("/blog", {templateUrl: "partials/blog.html", controller: "PageCtrl"})
     .when("/contact", {templateUrl: "partials/contact.html", controller: "PageCtrl"})
+    .when("/login", {templateUrl: "partials/login.html", controller: "PageCtrl"})
     // Blog
     .when("/blog", {templateUrl: "partials/blog.html", controller: "BlogCtrl"})
     .when("/blog/post", {templateUrl: "partials/blog_item.html", controller: "BlogCtrl"})
     // else 404
     .otherwise("/404", {templateUrl: "partials/404.html", controller: "PageCtrl"});
+    
 }]);
 /**
  * Controls the Blog

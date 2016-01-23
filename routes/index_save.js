@@ -9,11 +9,11 @@ var html_dir = path.join(__dirname, '../public');
 
 router.get('/', function(req, res){
   //res.sendfile(html_dir + 'test.html');
-  //res.sendfile(html_dir + '/index.html');
-  res.render('index');
+  res.sendfile(html_dir + '/index.html');
 });
 
 /* GET private page once logged in */
+/*
 router.get('/dashboard', function (req, res) {
   if (!req.user || req.user.status !== 'ENABLED') {
     return res.redirect('/login');
@@ -21,7 +21,7 @@ router.get('/dashboard', function (req, res) {
   return res.sendfile(html_dir, '/dashboard.html');
   res.render('dashboard', {title: 'Dashboard', error: req.flash('error')[0]});
   //res.render('dashboard', {title: 'Dashboard', user: req.user});
-});
+});*/
 
 /*
  * GET registration page 
